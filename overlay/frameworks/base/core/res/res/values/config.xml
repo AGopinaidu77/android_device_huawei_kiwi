@@ -150,7 +150,8 @@
     <color name="config_defaultNotificationColor">#ff00ff00</color>
 
     <!-- Default value for led color when battery is medium charged -->
-    <integer name="config_notificationsBatteryMediumARGB">0xffff7f00</integer>
+
+ <integer name="config_notificationsBatteryMediumARGB">0xffff7f00</integer>
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
@@ -210,4 +211,20 @@
 
     <!-- Disable IpReachability monitor -->
     <bool name="config_wifi_ipreachability_monitor">false</bool>
+ 
+    <!-- Flag specifying whether VoLTE is available on device -->
+    <bool name="config_device_volte_available">true</bool>
+
+    <!-- Flag specifying whether VoLTE should be available for carrier: independent of
+         carrier provisioning. If false: hard disabled. If true: then depends on carrier
+         provisioning, availability etc -->
+    <bool name="config_carrier_volte_available">true</bool>
+
+    <!-- Flag specifying whether VT is available on device -->
+    <bool name="config_device_vt_available">true</bool>
+
+    <!-- Flag specifying whether VT should be available for carrier: independent of
+         carrier provisioning. If false: hard disabled. If true: then depends on carrier
+         provisioning, availability etc -->
+    <bool name="config_carrier_vt_available">true</bool>
 </resources>
